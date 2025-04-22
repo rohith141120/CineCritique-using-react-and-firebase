@@ -1,0 +1,121 @@
+/* Sidebar Container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Fully hidden initially */
+  width: 250px;
+  height: 100vh;
+  background-color: #222;
+  box-shadow: -4px 0px 6px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Open Sidebar */
+.sidebar.open {
+  right: 0;
+}
+
+/* Sidebar Header (Username Display) */
+.sidebar-user {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #444;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar ul li a,
+.sidebar ul li button {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.sidebar ul li button:hover,
+.sidebar ul li a:hover {
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Close Button */
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 80%; /* Adjust width for mobile */
+  }
+}
+
+/* New: Members Link Styling */
+.sidebar ul li a.members-link {
+  color: #ffffff; /* Default color */
+  transition: color 0.3s ease;
+}
+
+.sidebar ul li a.members-link:hover {
+  color: #007bff; /* Highlight color for Members link */
+}
+
+/* New: Sign Out Button Styling */
+.sidebar ul li button.sign-out-btn {
+  color: #ffffff; /* Default color */
+  transition: color 0.3s ease;
+}
+
+.sidebar ul li button.sign-out-btn:hover {
+  color: #dc3545; /* Highlight color for Sign Out button */
+}
+
+/* New: Avatar Styling (if you add avatars in the future) */
+.sidebar-user .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 10px;
+}
+
+/* New: Hover Effect for Sidebar Links */
+.sidebar ul li a:hover,
+.sidebar ul li button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background on hover */
+  border-radius: 4px;
+}

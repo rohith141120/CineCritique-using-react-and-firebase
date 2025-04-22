@@ -1,0 +1,77 @@
+.letterboxd-dark {
+  background-color: #1f2020;
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background-color: #2d2d2d;
+  border: 1px solid #444;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.movie-card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.movie-card-container:hover .movie-card-img {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.view-list-btn {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-list-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.delete-list-btn {
+  background-color: #dc3545;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-list-btn:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+.create-list-btn {
+  background-color: #00ac1c;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-list-btn:hover {
+  background-color: #009214;
+  transform: translateY(-2px);
+}
+
+.toast-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}

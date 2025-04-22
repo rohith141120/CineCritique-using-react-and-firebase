@@ -1,0 +1,204 @@
+.desktop-movie-details {
+  background-color: #121212;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.desktop-backdrop {
+  position: relative;
+  width: 100%;
+  height: 550px; /* Increased height to move the backdrop slightly down */
+  background-size: cover;
+  background-position: center 30%; /* Adjusted to center the image slightly lower */
+  filter: brightness(0.7);
+}
+
+.desktop-poster-container {
+  position: absolute;
+  bottom: -100px;
+  left: 50px;
+}
+
+.desktop-poster {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.desktop-movie-info {
+  padding: 150px 50px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.desktop-movie-title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.desktop-release-year {
+  font-size: 1.2rem;
+  color: #50b5ff;
+  margin-bottom: 20px;
+}
+
+.desktop-overview {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.desktop-user-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.desktop-action-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.desktop-action-button.active {
+  background: linear-gradient(135deg, #ffcc00 0%, #ff6b6b 100%);
+  color: #121212;
+}
+
+.desktop-platforms-section {
+  margin-bottom: 30px;
+}
+
+.desktop-section-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.desktop-platforms-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.desktop-platform-item img {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.desktop-no-platforms {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+}
+
+.desktop-rating-section {
+  margin-bottom: 30px;
+}
+
+.desktop-star-rating {
+  font-size: 2rem;
+}
+
+.star {
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.star.filled {
+  color: #ffcc00;
+}
+
+.star.half-filled {
+  color: #ffcc00;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 50%;
+}
+
+.desktop-review-section {
+  margin-bottom: 30px;
+}
+
+.desktop-review-input {
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  resize: none;
+}
+
+.desktop-submit-review {
+  margin-top: 15px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #50b5ff;
+  color: #121212;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.desktop-submit-review:hover {
+  background: #3a9ad9;
+}
+
+.desktop-cast-section {
+  margin-bottom: 30px;
+}
+
+.desktop-cast-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.desktop-cast-item {
+  background-color: #2d2d2d;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: #999;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.desktop-cast-item:hover {
+  background-color: #3a3a3a;
+}
+
+.desktop-cast-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.desktop-providers {
+  margin-top: 15px;
+}
+
+.provider-section {
+  margin-bottom: 20px;
+}
+
+.provider-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}

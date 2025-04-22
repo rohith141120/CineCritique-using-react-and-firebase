@@ -1,0 +1,389 @@
+/* Cast.css - Premium Styling */
+
+/* Base Styles */
+.cast-page {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.cast-hero {
+  padding: 60px 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.cast-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.cast-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cast-image:hover {
+  transform: scale(1.03);
+}
+
+.cast-info {
+  padding: 20px;
+}
+
+.cast-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cast-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+  color: #b0b0b0;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meta-icon {
+  color: #4CAF50;
+}
+
+.meta-divider {
+  margin: 0 5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.social-link {
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: #4CAF50;
+  transform: scale(1.2);
+}
+
+/* Main Content Layout */
+.cast-details {
+  padding: 0 20px 40px;
+}
+
+.sidebar {
+  padding-right: 30px;
+}
+
+.sidebar-section {
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-item strong {
+  color: #b0b0b0;
+}
+
+.star-icon {
+  color: #FFD700;
+  margin-right: 5px;
+}
+
+/* Biography Section */
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-icon {
+  color: #4CAF50;
+}
+
+.biography-content {
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 8px;
+  padding: 25px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  backdrop-filter: blur(5px);
+}
+
+.biography-content p {
+  margin-bottom: 20px;
+}
+
+.no-bio {
+  color: #b0b0b0;
+  font-style: italic;
+}
+
+.source-note {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+/* Movie Grid */
+.movie-grid {
+  margin-bottom: 40px;
+}
+
+.movie-col {
+  padding: 10px;
+}
+
+.movie-card {
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-poster {
+  position: relative;
+  padding-top: 150%;
+  overflow: hidden;
+}
+
+.poster-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover .poster-image {
+  transform: scale(1.1);
+}
+
+.movie-rating {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+}
+
+.rating-icon {
+  color: #FFD700;
+  font-size: 0.8rem;
+}
+
+.movie-info {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.movie-title {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-year, .movie-character {
+  font-size: 0.85rem;
+  color: #b0b0b0;
+  margin-bottom: 3px;
+}
+
+/* Credits List */
+.credits-list {
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+}
+
+.credit-item {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.credit-item:last-child {
+  border-bottom: none;
+}
+
+.credit-item:hover {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.credit-year {
+  min-width: 60px;
+  font-weight: 600;
+  color: #4CAF50;
+}
+
+.credit-details {
+  flex-grow: 1;
+}
+
+.credit-title {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.credit-character {
+  font-size: 0.85rem;
+  color: #b0b0b0;
+  font-style: italic;
+}
+
+/* Loading and Error States */
+.loading-screen, .error-screen, .no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #0f0f0f;
+  text-align: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(76, 175, 80, 0.3);
+  border-radius: 50%;
+  border-top-color: #4CAF50;
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.error-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f44336;
+}
+
+.error-screen h3, .no-data h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.error-screen p {
+  margin-bottom: 20px;
+  color: #b0b0b0;
+}
+
+.retry-btn, .back-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.retry-btn:hover, .back-btn:hover {
+  background: #45a049;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .cast-name {
+    font-size: 2.5rem;
+  }
+  
+  .sidebar {
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cast-hero {
+    padding: 40px 0;
+  }
+  
+  .cast-name {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  
+  .sidebar {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cast-name {
+    font-size: 1.8rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .movie-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}

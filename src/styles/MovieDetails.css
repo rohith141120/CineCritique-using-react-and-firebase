@@ -1,0 +1,201 @@
+/* Page Container */
+.movie-details-page {
+  background-color: #121212;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+}
+
+/* Backdrop */
+.movie-details-hero {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
+}
+
+/* Poster (Desktop) */
+.poster-container {
+  position: absolute;
+  bottom: -80px;
+  left: 40px;
+}
+
+.movie-poster {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Movie Info */
+.movie-info {
+  padding: 130px 40px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movie-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.release-year {
+  font-size: 1.2rem;
+  color: #50b5ff;
+  margin-bottom: 20px;
+}
+
+.overview {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* User Actions */
+.user-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.action-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.action-button.active {
+  background: linear-gradient(135deg, #ffcc00 0%, #ff6b6b 100%);
+  color: #121212;
+}
+
+/* Review Section */
+.review-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.review-input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  resize: none;
+}
+
+.submit-review {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #50b5ff;
+  color: #121212;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-review:hover {
+  background: #3a9ad9;
+}
+
+/* Cast Section */
+.cast-section {
+  margin-bottom: 30px;
+}
+
+.cast-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cast-item {
+  background-color: #2d2d2d;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: #999;
+}
+
+/* Reviews Section */
+.reviews-section {
+  margin-bottom: 30px;
+}
+
+.review-card {
+  background-color: #292a2a;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.review-author {
+  color: #50b5ff;
+  font-weight: bold;
+}
+
+.no-reviews {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .movie-details-hero {
+    height: 250px;
+  }
+  .poster-container {
+    left: 20px;
+  }
+  .movie-poster {
+    width: 180px;
+  }
+  .movie-info {
+    padding: 110px 20px 30px;
+  }
+  .user-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-details-hero {
+    height: 200px;
+  }
+  .movie-poster {
+    width: 130px;
+  }
+  .movie-title {
+    font-size: 2rem;
+  }
+  .release-year {
+    font-size: 1rem;
+  }
+  .overview {
+    font-size: 1rem;
+  }
+}

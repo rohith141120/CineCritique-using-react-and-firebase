@@ -1,0 +1,145 @@
+/* Search Page Styles */
+.search-page {
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Search Header */
+.search-header {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.search-header h2 {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Search Form Container */
+.search-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Search Form */
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #2d2d2d;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.search-form button {
+  padding: 8px 15px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form button:hover {
+  background-color: #e6b800;
+}
+
+/* Show All Results Toggle */
+.show-all-toggle {
+  color: #999;
+  font-size: 14px;
+}
+
+.show-all-toggle a {
+  color: #999;
+  text-decoration: none;
+}
+
+.show-all-toggle a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Search Results */
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Search Result Item */
+.search-result-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: #2d2d2d;
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-result-item img {
+  width: 92px;
+  height: 138px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+/* Movie Details */
+.movie-details {
+  flex: 1;
+}
+
+.movie-details h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.movie-details .director,
+.movie-details .alternative-titles {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.movie-details .alternative-titles {
+  font-size: 12px;
+  color: #777;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+/* Loading and No Results */
+.loading,
+.no-results {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  margin-top: 20px;
+}

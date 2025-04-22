@@ -1,0 +1,30 @@
+/* Sign Out Page */
+.signout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .signout-container h2 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .signout-btn {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .signout-btn:hover {
+    background-color: darkred;
+  }
+  
