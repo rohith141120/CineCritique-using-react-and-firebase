@@ -8,7 +8,7 @@ import "../styles/Home.css";
 import ranbir from "../assets/home/ranbir.jpg";
 import { FiHeart, FiStar, FiEye, FiEdit, FiCalendar, FiList } from "react-icons/fi";
 
-const API_KEY = "64f3c8e0bda17ae6c7d84fab6cef88b1";
+const API_KEY = "your-tmdb-api-key";
 const BASE_URL = "https://api.themoviedb.org/3";
 
 const Home = () => {
