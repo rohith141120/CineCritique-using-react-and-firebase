@@ -14,7 +14,7 @@ const Films = () => {
   const [selectedGenre, setSelectedGenre] = useState("all");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 820);
 
-  const API_KEY = "64f3c8e0bda17ae6c7d84fab6cef88b1";
+  const API_KEY = "your-tmdb-api-key";
   const BASE_URL = "https://api.themoviedb.org/3";
   const GENRES_URL = `${BASE_URL}/genre/movie/list?api_key=${API_KEY}&language=en-US`;
 
