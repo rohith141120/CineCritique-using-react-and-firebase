@@ -7,7 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/Reviews.css";
 
-const API_KEY = "64f3c8e0bda17ae6c7d84fab6cef88b1"; // Replace with your TMDB API key
+const API_KEY = " Replace with your TMDB API key";
 const BASE_URL = "https://api.themoviedb.org/3";
 
 const Reviews = () => {
