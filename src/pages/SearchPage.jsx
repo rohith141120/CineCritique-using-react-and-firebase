@@ -19,7 +19,7 @@ const SearchPage = () => {
     }
 
     setIsLoading(true);
-    const apiKey = "64f3c8e0bda17ae6c7d84fab6cef88b1"; // Replace with env variable in production
+    const apiKey = "your-tmdb-api-key";
     const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}${
       showAllResults ? "&include_adult=true" : ""
     }`;
