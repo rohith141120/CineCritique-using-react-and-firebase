@@ -14,7 +14,7 @@ const UserList = ({ user }) => { // Changed from userId to user
   const [showToast, setShowToast] = useState(false);
   const navigate = useNavigate();
 
-  const TMDB_API_KEY = '64f3c8e0bda17ae6c7d84fab6cef88b1';
+  const TMDB_API_KEY = 'your-tmdb-api-key';
 
   // Fetch list details from Firestore
   useEffect(() => {
