@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "../styles/MovieDetails.css";
 import { Modal, Button, Form } from "react-bootstrap";
 
-const API_KEY = "64f3c8e0bda17ae6c7d84fab6cef88b1";
+const API_KEY = "your-tmdb-api-key";
 const BASE_URL = "https://api.themoviedb.org/3";
 
 const MovieDetails = () => {
