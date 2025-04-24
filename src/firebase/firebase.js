@@ -3,12 +3,12 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore, doc, setDoc, getDoc, updateDoc, collection, getDocs, deleteDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA46sLLI3bR7MW57rXprYebuxjE68YOb3k",
-  authDomain: "letterboxd-clone-6156b.firebaseapp.com",
-  projectId: "letterboxd-clone-6156b",
-  storageBucket: "letterboxd-clone-6156b.appspot.com",
-  messagingSenderId: "227110378588",
-  appId: "1:227110378588:web:538fde9e3fe31e39f41a99",
+  apiKey: "your-api-key",
+  authDomain: "your-auth-domain",
+  projectId: "your-project-id",
+  storageBucket: "your-storage-bucket",
+  messagingSenderId: "your-sender-id",
+  appId: "your-app-id",
 };
 
 const app = initializeApp(firebaseConfig);
