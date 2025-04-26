@@ -22,6 +22,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.  
 Your app is ready to be deployed!
 
+
+important:
+One thing i want to convey everuyone as i have removed the API KEY from every code, so please every one should create a account from the TMDB databse and Firebase to work out the peoject.
+
 ## Firebase Setup
 
 To use this project, you must configure your own Firebase credentials.  
